@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Profile Container */
+.img {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Profile Image */
+.img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1e90ff; /* Dodger Blue border */
+    margin-bottom: 20px;
+}
+
+/* Profile Heading */
+.img .h h2 {
+    font-size: 20px;
+    color: #1e90ff; /* Dodger Blue */
+    margin-bottom: 10px;
+}
+
+/* Complaint Section */
+.t {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    width: 80%;
+    max-width: 600px;
+}
+
+.t div {
+    margin-top: 10px;
+}
+
+.t textarea {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #1e90ff; /* Blue border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9; /* Light background for textarea */
+    resize: none; /* Disable resizing */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.t textarea:focus {
+    outline: none;
+    border-color: #87ceeb; /* Lighter blue on focus */
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5); /* Glow effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .img, .t {
+        width: 95%;
+    }
+
+    .img img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .img .h h2 {
+        font-size: 18px;
+    }
+
+    .t textarea {
+        height: 120px;
+    }
+}

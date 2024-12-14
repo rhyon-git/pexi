@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container Styling */
+div {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Heading Styling */
+h2 {
+    color: #1e90ff; /* Dodger Blue */
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead tr {
+    background-color: #1e90ff; /* Dodger Blue */
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+tbody tr {
+    background-color: #f9f9f9; /* Light background for rows */
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0f8ff; /* Alternate row color */
+}
+
+tbody td {
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Hover Effect for Rows */
+tbody tr:hover {
+    background-color: #87ceeb; /* Light blue hover */
+    color: white;
+}
+
+/* Link Styling */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1e90ff;
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px solid #1e90ff;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+a:hover {
+    background-color: #1e90ff;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    div {
+        width: 95%;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

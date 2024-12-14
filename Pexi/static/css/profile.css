@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile Container */
+.img {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Profile Image */
+.img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1e90ff; /* Dodger Blue border */
+    margin-bottom: 20px;
+}
+
+/* Profile Heading */
+.img .h h2 {
+    font-size: 20px;
+    color: #1e90ff; /* Dodger Blue */
+    margin-bottom: 10px;
+}
+
+.img .h h5 {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Table Container */
+.table {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead {
+    background-color: #1e90ff; /* Dodger Blue */
+    color: white;
+}
+
+thead td {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tbody tr {
+    background-color: #f9f9f9; /* Light row color */
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0f8ff; /* Alternate row color */
+}
+
+tbody td {
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Hover Effect for Rows */
+tbody tr:hover {
+    background-color: #87ceeb; /* Light blue hover */
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .img, .table {
+        width: 95%;
+    }
+
+    .img img {
+        width: 120px;
+        height: 120px;
+    }
+
+    table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
