@@ -1,63 +1,79 @@
-*{
-    padding: 0;
+/* General styles */
+body {
     margin: 0;
-    box-sizing: border-box;
-
-}body{
-    display:flex ;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    align-items:center;
-    background-image:url(img/pexi2.jpg);
-    background-size: cover;
+    background: linear-gradient(to bottom, #d7e7f7, #ffffff);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-   
 }
 
-input{
+.card {
+    background-color: #ffffff;
+    border: 2px solid #0078d7;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 2rem;
+    color: #0078d7;
+    margin-bottom: 20px;
+}
+
+.card label {
+    display: block;
+    font-size: 0.9rem;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.card input[type="text"] {
     width: 100%;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding: 6px;
-    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #0078d7;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.card input[type="submit"] {
+    background-color: #0078d7;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-
+    width: 100%;
+    transition: background-color 0.3s ease;
 }
-.card{
-    border: 3px solid whitesmoke;
-    padding: 80px;
-    border-radius: 100px;
-    backdrop-filter: blur(2px);
-    background-color: whitesmoke;
 
-    }
-     h1{
-        text-align: center;
-        margin-bottom: 20px;
-        color:black;
-        
-    
-    
-    }
-    #btn{
-        padding: 10px;
-        background-color:transparent;
-        margin-top: 5%;
-        transition: 0.5s ease;
-        border: 3px solid;
-        border-radius: 20px;
-
-    
-    
-    }
-    #btn:hover{
-        background-color:orange;
-    }
-
-input::placeholder{
-    color:gray;
+.card input[type="submit"]:hover {
+    background-color: #005bb5;
 }
-input:focus{
-    outline: none;
+
+.card a {
+    color: #0078d7;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card i {
+    color: #0078d7;
+    margin-right: 10px;
 }

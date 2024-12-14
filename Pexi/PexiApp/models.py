@@ -35,6 +35,7 @@ class Feedback_model(models.Model):
     LOGINID=models.ForeignKey(Login_model, on_delete=models.CASCADE, null=True, blank=True)
     rating = models.IntegerField(null=True, blank=True)
     feedback = models.CharField(max_length=100, null=True, blank=True)
+    type=models.CharField(max_length=100, null=True, blank=True)
     create_at = models.DateField(auto_now_add=True)
     update_at = models.DateField(auto_now=True)
 

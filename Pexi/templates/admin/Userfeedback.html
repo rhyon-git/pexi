@@ -8,20 +8,27 @@
     <link rel="stylesheet" href="{% static 'css/cmp.css' %}">
 </head>
 <body>
-    <div><h2>COMPLAINTS</h2>
+    <div><h2>FEEDBACKS</h2>
         <table>
             <thead>
             <tr>
             <th>USER ID</th>
-            <th>COMPLAINTS</th>
+            <th>USER NAME</th>
+            <th>FEEDBACKS</th>
             </tr></thead>
 
             <tbody>
+                {% for i in c %}
+
             <tr>
-                <td>001</td>
-                <td><a href="/ucmp2/" style="--clr:#1e9bff">
+                <td>{{i.id}}</td>
+                <td>{{i.LOGINID.username}}</td>
+                <td><a href="#" style="--clr:#1e9bff">
                     <span>CLICK HERE</span><i></i></a></td>
-            </tr></tbody>
+                    {% endfor %}
+
+            </tr>
+        </tbody>
         </table>
     </div>
 </body>
